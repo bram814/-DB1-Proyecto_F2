@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B5C0CFF-5341-3BD1-2B9D-95541294DED7" name="Periodo">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:36:08 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Periodo" id="A5898540-EE51-1BAB-9CDF-590C50293010">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:36:15 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HoraInicio" id="FC2D0DEB-20E3-E532-AB9D-953B6538DB5A">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:36:28 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HoraFinal" id="BB857BF3-4632-0790-8BB8-6D1FEBB30E39">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:36:44 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FDEDA5B9-774E-D193-60FC-F5013F9AB256" name="Horario PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:37:35 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A5898540-EE51-1BAB-9CDF-590C50293010</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

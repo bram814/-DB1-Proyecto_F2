@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5E9F4E9-324C-17E7-E51B-1901B2FB7FE6" containerWithKeyObject="F01354F6-8B05-6570-C6A7-C899345236B8" localFKIndex="22A64C20-B59D-5DF4-C0F1-5A4B335C8172" name="Pensum_Plan_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>2603B3CB-3911-755E-9DAF-27D824698BEB</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<referredTableLongName>Plan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5C131FA5-E790-E9F4-72EB-CF1F0D267ADD</referredTableID>
+<keyObject>02536A1E-BA65-BCA2-EC45-6B1C7CDE2E05</keyObject>
+<referredKeyID>02536A1E-BA65-BCA2-EC45-6B1C7CDE2E05</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Plan,Carrera_Carrera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

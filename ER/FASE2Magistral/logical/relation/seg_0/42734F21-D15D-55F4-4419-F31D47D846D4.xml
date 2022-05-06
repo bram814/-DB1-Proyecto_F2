@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Curso_Seccion" directorySegmentName="seg_0" id="42734F21-D15D-55F4-4419-F31D47D846D4">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:24:00 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>DD5B4D31-C50A-D715-8EF5-ECB85CFE52D2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>226D2D6E-0E65-D582-7624-50830DACF799</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C603A21-AB0C-FEE7-3834-BB2D8AE573F7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34B7EC90-B82F-4ACD-172F-0C87979BC7B8" name="Catedratico">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:04:43 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Catedratico" id="BB8985C3-2260-11ED-DC54-4E9524F0D311">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:04:50 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="240B3ACF-495B-7D3E-2778-04F9FC9CCB90">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:04:58 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SueldoMensual" id="A04A2AF1-9CB9-4939-8CDC-8DCAD49AD631">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:05:32 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0DC328B3-F6A7-235C-66A0-598924284EA4" name="Catedratico PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:05:18 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB8985C3-2260-11ED-DC54-4E9524F0D311</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

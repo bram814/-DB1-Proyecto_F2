@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Dia_Horario" directorySegmentName="seg_0" id="E2744D67-59DC-D656-4AF6-74D8B786C946">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:34:21 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>A4B7FF9A-BF43-3066-7249-EDC8C2674F20</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F0DC3EEF-9B71-EB4D-CE01-655B105883CA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AF20A756-71A5-BA0A-F79F-5947A1174D06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE93F77C-0604-6C9E-A55A-3DCB772733C4" name="Pensum">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-26 20:30:31 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Obligatoriedad" id="07C17553-144A-9DB0-1B17-1038E7046DC1">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-26 20:30:37 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumCreditos" id="9B7CA73B-3CC2-9346-65F2-E3E799415B15">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:33:35 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NotaAprobacion" id="A05C22BC-61E0-8934-1625-BDCA05AEA11C">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:33:55 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZonaMinima" id="94BFADB8-79BE-E9BF-50C9-44933E053FB7">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:34:10 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CredPrerreq" id="B56C67ED-39CA-D6A9-810D-4151F6C9267D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:34:27 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Plan" id="66DD5A08-59A5-4564-F796-078CE85B330D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:44:27 UTC</createdTime>
+<generatorID>2603B3CB-3911-755E-9DAF-27D824698BEB</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>ACEB6C3B-B33B-D73C-B3EF-1ED2CE7B385E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carrera" id="045C7A44-0D36-1EA2-43A2-3A61D269A9C9">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:44:27 UTC</createdTime>
+<generatorID>2603B3CB-3911-755E-9DAF-27D824698BEB</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>81432875-7D6F-4991-F406-B34C7EBF7AA4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo" id="A1441AFD-0BAC-F4A6-71EE-6495ED565E2D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:24:21 UTC</createdTime>
+<generatorID>33E6956B-0B29-EE26-A5AA-7E3252873BCC</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>5259042C-FB37-0108-9781-7FC963229EA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="616F5B8C-2F11-7EFB-CBAA-59BED5F2E505" name="Pensum PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:44:27 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>66DD5A08-59A5-4564-F796-078CE85B330D</attributeRef>
+<attributeRef>045C7A44-0D36-1EA2-43A2-3A61D269A9C9</attributeRef>
+<attributeRef>A1441AFD-0BAC-F4A6-71EE-6495ED565E2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

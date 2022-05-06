@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="FASE2Magistral" id="804EA697-E8AB-041B-1C70-709D9D958150" version="3.5">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-03-29 21:37:33 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>804EA697-E8AB-041B-1C70-709D9D958150</designId>
+</OSDM_Design>

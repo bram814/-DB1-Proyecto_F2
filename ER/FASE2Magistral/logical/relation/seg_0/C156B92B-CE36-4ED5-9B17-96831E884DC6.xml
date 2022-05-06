@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Estudiante_Asignacion" directorySegmentName="seg_0" id="C156B92B-CE36-4ED5-9B17-96831E884DC6">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:40 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>5A7AD9EF-5AB9-174E-803E-886EA6E8E63D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>174DA2C2-6F8B-E4CC-8957-8C1C5A38927C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A1DE88F-5D9D-7888-61A5-67F3AE5E8643</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

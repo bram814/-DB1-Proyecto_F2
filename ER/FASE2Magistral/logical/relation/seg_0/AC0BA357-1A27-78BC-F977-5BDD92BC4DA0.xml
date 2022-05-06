@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Salon_Edificio" directorySegmentName="seg_0" id="AC0BA357-1A27-78BC-F977-5BDD92BC4DA0">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:35:30 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>3942BCF0-C06D-AFF7-0E04-A10BD6485591</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D05DC3CB-2ED5-6A81-49E2-ABE31FA1D73A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AF20A756-71A5-BA0A-F79F-5947A1174D06</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

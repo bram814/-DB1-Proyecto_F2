@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B38E772C-6CEC-7AC1-B728-53BF8260A194" name="Prerrequisito">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>F7A77248-264A-395D-4E80-71E3EE0C5ECE</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pensum_Plan" id="4F31A2B5-28FF-9472-A9F1-7CA4DFB1F55B">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>B3F15B03-E2F7-2532-023B-6FEB3F50BBF6</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D96C0F99-DCA8-BE01-338F-520CF04A02DE" referredColumn="C0E4160B-BEE7-58D8-73EC-42ECA923389B"/>
+</associations>
+</Column>
+<Column name="Pensum_Carrera" id="CE85D007-2036-1669-626F-5339EF13005C">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>22B2B874-255C-0828-405D-9937508E3557</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D96C0F99-DCA8-BE01-338F-520CF04A02DE" referredColumn="0F703F68-A8D7-A424-889C-AA1E764B565B"/>
+</associations>
+</Column>
+<Column name="Pensum_Codigo" id="44D422B7-1C55-419B-B3C9-B2DF80F480C5">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>E4DBCE80-87D8-3CDC-6577-50EA90FF9461</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D96C0F99-DCA8-BE01-338F-520CF04A02DE" referredColumn="3D994547-9B04-EED5-7E68-77A35D830ECB"/>
+</associations>
+</Column>
+<Column name="Curso_Prerreq" id="CE6CDD09-0850-1D81-61EC-81695753816D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>6A872826-4CF4-3310-2183-44CEA0548575</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CFF5B41-50F3-D57A-7021-BB19513A7D69" referredColumn="8DE1BDA4-DD40-DBD7-3623-EB04F372BC53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19BF64C4-C4FD-A37F-2A04-7DEEC9218A76" name="Prerrequisito_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>5A5A5D7D-5BE1-336D-61C2-17FD99D7E964</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F31A2B5-28FF-9472-A9F1-7CA4DFB1F55B"/>
+<colUsage columnID="CE85D007-2036-1669-626F-5339EF13005C"/>
+<colUsage columnID="44D422B7-1C55-419B-B3C9-B2DF80F480C5"/>
+<colUsage columnID="CE6CDD09-0850-1D81-61EC-81695753816D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20F563BD-987F-D211-A401-C086F4FAE55B" name="Prerrequisito_Curso_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>42AAF7C5-B464-22FA-9BE6-0D17A32A13F9</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE6CDD09-0850-1D81-61EC-81695753816D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F926A35-72FC-BFD4-5741-06D97B562D62" name="Prerrequisito_Pensum_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>B4ABCF2D-7363-9DF4-DF8B-997C26B89EE4</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F31A2B5-28FF-9472-A9F1-7CA4DFB1F55B"/>
+<colUsage columnID="CE85D007-2036-1669-626F-5339EF13005C"/>
+<colUsage columnID="44D422B7-1C55-419B-B3C9-B2DF80F480C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

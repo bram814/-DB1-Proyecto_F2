@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A1DE88F-5D9D-7888-61A5-67F3AE5E8643" name="Asignacion">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:28:08 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Zona" id="40D084BB-CB0B-A43E-4DA3-CF236AE311C1">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:28:22 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nota" id="5FF6AE5C-878B-68DC-B5DA-B3D334ACCC7D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:29:31 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Seccion" id="9FCCFEC8-F81F-C0C3-BF22-98D36E7AD06B">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:26 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>572B9AD7-FEA2-B756-4595-A46325CB76BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ano" id="CFB61D69-044F-4FAF-2FDD-B05ED4E7F264">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:26 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>D8316CCC-AAC1-B461-5402-5E72282C4DA8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ciclo" id="D651AF8E-6356-7109-ECEB-BB078C657370">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:26 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>54906EF2-32CD-3F29-7383-0AF9A390F055</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Catedratico" id="0E93619C-5A83-F38C-7B8F-A2D953AA39D0">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:26 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>35CABCBF-AEB8-9FEA-E9BD-54E81A3F326C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carnet" id="DC17B57C-BEEE-3683-17EA-4751063448E0">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:40 UTC</createdTime>
+<generatorID>C156B92B-CE36-4ED5-9B17-96831E884DC6</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<referedAttribute>D9D70EED-D76D-0D66-5AA1-A817C0D1DB27</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5E2F310C-8EE5-3874-596A-71BF81EAAB0F" name="Asignacion PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:30:26 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9FCCFEC8-F81F-C0C3-BF22-98D36E7AD06B</attributeRef>
+<attributeRef>CFB61D69-044F-4FAF-2FDD-B05ED4E7F264</attributeRef>
+<attributeRef>D651AF8E-6356-7109-ECEB-BB078C657370</attributeRef>
+<attributeRef>0E93619C-5A83-F38C-7B8F-A2D953AA39D0</attributeRef>
+<attributeRef>DC17B57C-BEEE-3683-17EA-4751063448E0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

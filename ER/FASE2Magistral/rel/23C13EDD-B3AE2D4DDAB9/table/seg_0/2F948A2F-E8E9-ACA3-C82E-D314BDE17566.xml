@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F948A2F-E8E9-ACA3-C82E-D314BDE17566" name="Seccion">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>7C603A21-AB0C-FEE7-3834-BB2D8AE573F7</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Seccion" id="917230F7-3725-6592-E690-E0749AE7FB38">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>572B9AD7-FEA2-B756-4595-A46325CB76BE</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ano" id="325CCE83-8E0C-CD7A-F4C4-25EE6E629988">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>D8316CCC-AAC1-B461-5402-5E72282C4DA8</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ciclo" id="F22EE4E2-FE0B-C691-FEA0-FA1E0F64EA2F">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>54906EF2-32CD-3F29-7383-0AF9A390F055</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Catedratico" id="64D597AD-CAF6-560D-0889-92C4546F64F4">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>35CABCBF-AEB8-9FEA-E9BD-54E81A3F326C</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="060E268A-1B27-BCC8-4A15-5F2ECA575D8E" referredColumn="8531E0B4-8837-F5E9-B7CD-D5138375E5D2"/>
+</associations>
+</Column>
+<Column name="Codigo" id="9DD758AA-75DB-5AF2-5CE6-676F41622D24">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>85AD169B-F6F2-C0B2-1CBF-E4BE10D4F5A9</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2EEF4B60-417F-30FD-3E26-3D3C7C84D3DD" referredColumn="8DE1BDA4-DD40-DBD7-3623-EB04F372BC53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9E4A80D-42DC-D828-79A3-2F67A6010C90" name="Seccion_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>255641EC-CBDB-7444-9E2A-5A5D765BBCC0</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="917230F7-3725-6592-E690-E0749AE7FB38"/>
+<colUsage columnID="325CCE83-8E0C-CD7A-F4C4-25EE6E629988"/>
+<colUsage columnID="F22EE4E2-FE0B-C691-FEA0-FA1E0F64EA2F"/>
+<colUsage columnID="9DD758AA-75DB-5AF2-5CE6-676F41622D24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F22D4ADC-1B4F-62B2-DFBF-75A7BA167BCC" name="Seccion_Catedratico_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>CC559761-E969-F294-0408-98832400C547</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64D597AD-CAF6-560D-0889-92C4546F64F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F13813CE-49A2-86B2-D66A-7CD1ACDEFDA7" name="Seccion_Curso_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>42734F21-D15D-55F4-4419-F31D47D846D4</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD758AA-75DB-5AF2-5CE6-676F41622D24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

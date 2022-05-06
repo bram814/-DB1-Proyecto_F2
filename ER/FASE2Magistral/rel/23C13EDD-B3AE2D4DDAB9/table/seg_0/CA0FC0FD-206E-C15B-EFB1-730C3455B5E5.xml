@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA0FC0FD-206E-C15B-EFB1-730C3455B5E5" name="Curso">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>226D2D6E-0E65-D582-7624-50830DACF799</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codigo" id="8DE1BDA4-DD40-DBD7-3623-EB04F372BC53">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>5259042C-FB37-0108-9781-7FC963229EA5</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="436D8923-7A28-0713-9F0A-788440A3AA6E">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>960E1E61-6826-3B7C-AADB-70B05A6E8250</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0C28F6E-0344-7A18-8A2C-F1316EF028A7" name="Curso_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>DD5B4D31-C50A-D715-8EF5-ECB85CFE52D2</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DE1BDA4-DD40-DBD7-3623-EB04F372BC53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A406FD8A-094E-CBE8-2069-5F8853C68FC9" name="Inscrito">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>49C8FBFA-2303-5875-4CFF-4715FE4458F1</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FechaInscripcion" id="6A892F5B-655F-743B-E877-EB1E7E1B09C7">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>139B441E-6F66-E188-F3B3-DF44E7FE75B1</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Carrera" id="12A5FA8D-3F60-6B2E-73C8-1906E80762D8">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>82D23805-77D0-B3E0-D0BF-3377072B7642</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C943B58-8E50-0856-A94B-8BC87852ECF5" referredColumn="D14B04B7-ECFE-F58A-2462-9F85E88DDE66"/>
+</associations>
+</Column>
+<Column name="Carnet" id="DFAAE0E0-F57C-374F-5049-E8EC44D45FDA">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>55038ED2-DF37-1123-38B6-438B7CD46EAE</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AC83376-CF90-067C-21E1-F927081353F1" referredColumn="0D528F16-C07A-7595-C7A6-A365B9CBEF77"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D27DC09E-0EEA-845A-82E5-447AB31DB10D" name="Inscrito_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>1F8FC4D4-A2E3-E416-B982-912A44BBD14E</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12A5FA8D-3F60-6B2E-73C8-1906E80762D8"/>
+<colUsage columnID="DFAAE0E0-F57C-374F-5049-E8EC44D45FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="150B146A-2826-AFB2-4CB3-A441FE1619BA" name="Inscrito_Estudiante_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>71A521E6-2270-9AC3-F482-9539661FDE95</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFAAE0E0-F57C-374F-5049-E8EC44D45FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC824977-9A5D-59C1-A90E-53BB9E3C9285" name="Inscrito_Carrera_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>5E3070AD-1AAE-940D-88DB-6799FC6582F4</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12A5FA8D-3F60-6B2E-73C8-1906E80762D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

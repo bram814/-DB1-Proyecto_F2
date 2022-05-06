@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7D80817-68EB-CFC4-14C6-DF21FA0867C7" name="Salon">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>D05DC3CB-2ED5-6A81-49E2-ABE31FA1D73A</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Edificio" id="32C1AC91-630E-90C4-E12C-0CF1AA422F6C">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>44C70D1F-A8EF-BB80-5D7B-DD1F33B3CC48</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salon" id="E4692E26-A3DB-534B-77DD-C3891F6C3771">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>33D336C4-9102-42BF-7D1D-7D578807888C</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacidad" id="EECFD983-84A2-1E54-1E66-FF354EA340D6">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>6E9F59E5-7617-EC5F-0D23-81D240D5E798</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46943FC5-487B-E664-224D-267A015059AB" name="Salon_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>3942BCF0-C06D-AFF7-0E04-A10BD6485591</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C1AC91-630E-90C4-E12C-0CF1AA422F6C"/>
+<colUsage columnID="E4692E26-A3DB-534B-77DD-C3891F6C3771"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

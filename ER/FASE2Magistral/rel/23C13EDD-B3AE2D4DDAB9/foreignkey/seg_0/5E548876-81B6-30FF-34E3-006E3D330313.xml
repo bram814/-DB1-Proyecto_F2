@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5E548876-81B6-30FF-34E3-006E3D330313" containerWithKeyObject="ADF77AF3-5DF2-9836-7900-BA9A8F4E89AA" localFKIndex="7A816158-8DC4-38D1-D6A3-2631606C0338" name="Asignacion_Seccion_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<referredTableLongName>Seccion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F948A2F-E8E9-ACA3-C82E-D314BDE17566</referredTableID>
+<keyObject>A9E4A80D-42DC-D828-79A3-2F67A6010C90</keyObject>
+<referredKeyID>A9E4A80D-42DC-D828-79A3-2F67A6010C90</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Seccion,Ano,Ciclo,Codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

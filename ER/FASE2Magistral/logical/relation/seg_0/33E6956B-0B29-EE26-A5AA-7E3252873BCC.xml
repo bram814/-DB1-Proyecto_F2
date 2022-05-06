@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Curso_Pensum" directorySegmentName="seg_0" id="33E6956B-0B29-EE26-A5AA-7E3252873BCC">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:44:36 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>DD5B4D31-C50A-D715-8EF5-ECB85CFE52D2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>226D2D6E-0E65-D582-7624-50830DACF799</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE93F77C-0604-6C9E-A55A-3DCB772733C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

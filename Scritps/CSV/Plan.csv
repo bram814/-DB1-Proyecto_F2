@@ -1,0 +1,7 @@
+Plan,Carrera,Nombre,AñoInicial,CicloInicial,AñoFinal,CicloFinal,NumCreditosCierre
+CivilMatutino,1,CivilMatutino,2009,2009,2023,2023,141
+CivilVespertino,1,CivilVespertino,2009,2009,2023,2023,141
+IndustrialMatutino,3,IndustrialMatutino,2010,2010,2024,2024,141
+IndustrialVespertino,3,IndustrialVespertino,2010,2010,2024,2024,141
+SistemasMatutino,6,SistemasMatutino,2011,2011,2025,2025,141
+SistemasVespertino,6,SistemasVespertino,2011,2011,2025,2025,141

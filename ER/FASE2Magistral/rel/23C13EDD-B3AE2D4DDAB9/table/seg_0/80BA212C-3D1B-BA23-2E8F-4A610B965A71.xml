@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80BA212C-3D1B-BA23-2E8F-4A610B965A71" name="Horario">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>AF20A756-71A5-BA0A-F79F-5947A1174D06</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Dia" id="3DD5FDE2-E028-DD71-6307-DAB8260A5C69">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>D24F4E77-D4E3-FFB5-E706-22A2C881E322</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0154C711-3904-78DB-BDB7-5A90B28774A2" referredColumn="C37F6689-1DDE-B4DD-CE07-C0133260788B"/>
+</associations>
+</Column>
+<Column name="Edificio" id="8B1FA324-4895-0C8C-E389-CB96A9DB46CA">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>9D65DF46-FB2B-3D57-8A57-8674639BC1A0</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DFE634C-678D-7119-5936-BF3F907285B0" referredColumn="32C1AC91-630E-90C4-E12C-0CF1AA422F6C"/>
+</associations>
+</Column>
+<Column name="Salon" id="D54F29BD-3C38-0522-E720-33666A793A6C">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>693394C7-097D-CC3D-CD95-4A1C4EE6061A</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DFE634C-678D-7119-5936-BF3F907285B0" referredColumn="E4692E26-A3DB-534B-77DD-C3891F6C3771"/>
+</associations>
+</Column>
+<Column name="Seccion_Seccion" id="AA28A4F9-130B-3639-C9E9-EE1C6F6ABF30">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>1408A714-E1E7-BAAC-4BB6-5F6BCAC11D37</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BAC6705-65A6-2D06-4871-DC03E9719970" referredColumn="917230F7-3725-6592-E690-E0749AE7FB38"/>
+</associations>
+</Column>
+<Column name="Seccion_Ano" id="7E4D7A80-DB8F-38C9-B687-D5F9E4379072">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>51A456D0-0891-D69F-9FDD-250B49B9047D</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BAC6705-65A6-2D06-4871-DC03E9719970" referredColumn="325CCE83-8E0C-CD7A-F4C4-25EE6E629988"/>
+</associations>
+</Column>
+<Column name="Seccion_Ciclo" id="EE13B230-1603-149D-A7E1-3EF2CE1EA32C">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>8F00A336-3FF8-412E-712F-871CF3C65600</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BAC6705-65A6-2D06-4871-DC03E9719970" referredColumn="F22EE4E2-FE0B-C691-FEA0-FA1E0F64EA2F"/>
+</associations>
+</Column>
+<Column name="Periodo" id="D4279F63-B80D-8A53-3458-CA7A7B941734">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>41DAB249-645E-2B18-7303-67122A5B117E</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BBDFA40-A5B5-00F8-6974-F5C3A30326B3" referredColumn="E0CAE068-7E0C-0A32-E9F9-D4664EBDDE65"/>
+</associations>
+</Column>
+<Column name="Seccion_Codigo" id="373C7816-FD7A-45E4-FA9F-3C2471AD8312">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:49:34 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BAC6705-65A6-2D06-4871-DC03E9719970" referredColumn="9DD758AA-75DB-5AF2-5CE6-676F41622D24"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEA2D57A-5834-0E80-84CA-46C22E1077F9" name="Horario_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>C1CA7E08-50BE-FBA6-D88B-1DEA26C7EB47</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DD5FDE2-E028-DD71-6307-DAB8260A5C69"/>
+<colUsage columnID="AA28A4F9-130B-3639-C9E9-EE1C6F6ABF30"/>
+<colUsage columnID="7E4D7A80-DB8F-38C9-B687-D5F9E4379072"/>
+<colUsage columnID="EE13B230-1603-149D-A7E1-3EF2CE1EA32C"/>
+<colUsage columnID="D4279F63-B80D-8A53-3458-CA7A7B941734"/>
+<colUsage columnID="373C7816-FD7A-45E4-FA9F-3C2471AD8312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E76EAF32-54AF-25F7-CB02-3432C694B93A" name="Horario_Dia_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>E2744D67-59DC-D656-4AF6-74D8B786C946</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DD5FDE2-E028-DD71-6307-DAB8260A5C69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29062391-A46E-3A26-0356-D516C08BBA5B" name="Horario_Periodo_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>9B39C41A-2CED-A845-B952-4D135B48BE29</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4279F63-B80D-8A53-3458-CA7A7B941734"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0C1BE11-1297-313D-8F6B-3A054F822629" name="Horario_Salon_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>AC0BA357-1A27-78BC-F977-5BDD92BC4DA0</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B1FA324-4895-0C8C-E389-CB96A9DB46CA"/>
+<colUsage columnID="D54F29BD-3C38-0522-E720-33666A793A6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CEB3E36-ADEA-076B-D503-FE7361BDD808" name="Horario_Seccion_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>7C060B2B-F440-2F4E-1160-9B06761010BF</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA28A4F9-130B-3639-C9E9-EE1C6F6ABF30"/>
+<colUsage columnID="7E4D7A80-DB8F-38C9-B687-D5F9E4379072"/>
+<colUsage columnID="EE13B230-1603-149D-A7E1-3EF2CE1EA32C"/>
+<colUsage columnID="373C7816-FD7A-45E4-FA9F-3C2471AD8312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

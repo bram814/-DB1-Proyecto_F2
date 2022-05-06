@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Catedratico_Seccion" directorySegmentName="seg_0" id="CC559761-E969-F294-0408-98832400C547">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:23:46 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>0DC328B3-F6A7-235C-66A0-598924284EA4</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>34B7EC90-B82F-4ACD-172F-0C87979BC7B8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C603A21-AB0C-FEE7-3834-BB2D8AE573F7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

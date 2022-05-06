@@ -1,0 +1,153 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F01354F6-8B05-6570-C6A7-C899345236B8" name="Pensum">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>AE93F77C-0604-6C9E-A55A-3DCB772733C4</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Obligatoriedad" id="400593C7-0CDC-8A37-FE98-A6211CE59BBC">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>07C17553-144A-9DB0-1B17-1038E7046DC1</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NumCreditos" id="5C9B58FA-4082-09DC-CB6A-D709C12A8D78">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>9B7CA73B-3CC2-9346-65F2-E3E799415B15</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NotaAprobacion" id="22737B7D-BFB4-9EAE-1589-77002A9376B3">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>A05C22BC-61E0-8934-1625-BDCA05AEA11C</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZonaMinima" id="4ECA0D1E-A48F-67F2-68A3-91AF6B12C79E">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>94BFADB8-79BE-E9BF-50C9-44933E053FB7</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CredPrerreq" id="1C1D86E5-A6E1-FF1D-6262-8B9A71BBDAA4">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>B56C67ED-39CA-D6A9-810D-4151F6C9267D</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Plan" id="C0E4160B-BEE7-58D8-73EC-42ECA923389B">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>66DD5A08-59A5-4564-F796-078CE85B330D</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5E9F4E9-324C-17E7-E51B-1901B2FB7FE6" referredColumn="F0F920DF-6685-23D5-1308-9849AFB2191F"/>
+</associations>
+</Column>
+<Column name="Carrera" id="0F703F68-A8D7-A424-889C-AA1E764B565B">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>045C7A44-0D36-1EA2-43A2-3A61D269A9C9</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5E9F4E9-324C-17E7-E51B-1901B2FB7FE6" referredColumn="1C74A1A1-D7CC-0212-5608-6F18B87AE440"/>
+</associations>
+</Column>
+<Column name="Codigo" id="3D994547-9B04-EED5-7E68-77A35D830ECB">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>A1441AFD-0BAC-F4A6-71EE-6495ED565E2D</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E42D307-92A7-69AE-6459-174EE7389067" referredColumn="8DE1BDA4-DD40-DBD7-3623-EB04F372BC53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1270A81-D796-84B0-8652-D19E929C33EF" name="Pensum_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>616F5B8C-2F11-7EFB-CBAA-59BED5F2E505</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0E4160B-BEE7-58D8-73EC-42ECA923389B"/>
+<colUsage columnID="0F703F68-A8D7-A424-889C-AA1E764B565B"/>
+<colUsage columnID="3D994547-9B04-EED5-7E68-77A35D830ECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0713F5F8-F9CB-981B-596A-A376388550C7" name="Pensum_Curso_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>33E6956B-0B29-EE26-A5AA-7E3252873BCC</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D994547-9B04-EED5-7E68-77A35D830ECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22A64C20-B59D-5DF4-C0F1-5A4B335C8172" name="Pensum_Plan_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>2603B3CB-3911-755E-9DAF-27D824698BEB</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0E4160B-BEE7-58D8-73EC-42ECA923389B"/>
+<colUsage columnID="0F703F68-A8D7-A424-889C-AA1E764B565B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

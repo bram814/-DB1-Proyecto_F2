@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5241E4E6-E372-38CD-6B7C-7E5AC5852C18" mainViewID="514B3178-DCDE-287C-4DF8-09CA49DA19F0">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-03-29 21:37:33 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

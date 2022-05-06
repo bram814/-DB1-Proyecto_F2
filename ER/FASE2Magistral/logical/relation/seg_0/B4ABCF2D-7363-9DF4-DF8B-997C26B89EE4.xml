@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Pensum_Prerreq" directorySegmentName="seg_0" id="B4ABCF2D-7363-9DF4-DF8B-997C26B89EE4">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 03:46:04 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>616F5B8C-2F11-7EFB-CBAA-59BED5F2E505</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AE93F77C-0604-6C9E-A55A-3DCB772733C4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F7A77248-264A-395D-4E80-71E3EE0C5ECE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

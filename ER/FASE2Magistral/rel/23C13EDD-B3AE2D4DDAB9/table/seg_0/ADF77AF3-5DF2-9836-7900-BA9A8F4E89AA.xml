@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADF77AF3-5DF2-9836-7900-BA9A8F4E89AA" name="Asignacion">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>6A1DE88F-5D9D-7888-61A5-67F3AE5E8643</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Zona" id="66CF3C8A-59F1-B9D9-8F17-59EF802EFC91">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>40D084BB-CB0B-A43E-4DA3-CF236AE311C1</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota" id="63280A74-95BD-A9A5-E4BF-F6D6B11CA19D">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>5FF6AE5C-878B-68DC-B5DA-B3D334ACCC7D</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Seccion_Seccion" id="E0B18F96-37CE-7BEA-9E30-58F8C22B2C99">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>9FCCFEC8-F81F-C0C3-BF22-98D36E7AD06B</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E548876-81B6-30FF-34E3-006E3D330313" referredColumn="917230F7-3725-6592-E690-E0749AE7FB38"/>
+</associations>
+</Column>
+<Column name="Seccion_Ano" id="8BA93B85-600A-22AA-E740-D73DE7C40207">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>CFB61D69-044F-4FAF-2FDD-B05ED4E7F264</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E548876-81B6-30FF-34E3-006E3D330313" referredColumn="325CCE83-8E0C-CD7A-F4C4-25EE6E629988"/>
+</associations>
+</Column>
+<Column name="Seccion_Ciclo" id="FFEFDDEC-4535-FABB-D3E5-0D142CFDA025">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>D651AF8E-6356-7109-ECEB-BB078C657370</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E548876-81B6-30FF-34E3-006E3D330313" referredColumn="F22EE4E2-FE0B-C691-FEA0-FA1E0F64EA2F"/>
+</associations>
+</Column>
+<Column name="Estudiante_Carnet" id="E0C1CDA9-1EDB-D24E-50C5-0C59FD7D678A">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>DC17B57C-BEEE-3683-17EA-4751063448E0</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4825485-C4B2-1325-3814-0F1A55335326" referredColumn="0D528F16-C07A-7595-C7A6-A365B9CBEF77"/>
+</associations>
+</Column>
+<Column name="Seccion_Codigo" id="2812B58D-9358-0615-7BB5-4534184F8957">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:49:34 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E548876-81B6-30FF-34E3-006E3D330313" referredColumn="9DD758AA-75DB-5AF2-5CE6-676F41622D24"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9380333D-3D5E-3B56-45B1-704663EDD132" name="Asignacion_PK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>5E2F310C-8EE5-3874-596A-71BF81EAAB0F</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0B18F96-37CE-7BEA-9E30-58F8C22B2C99"/>
+<colUsage columnID="8BA93B85-600A-22AA-E740-D73DE7C40207"/>
+<colUsage columnID="FFEFDDEC-4535-FABB-D3E5-0D142CFDA025"/>
+<colUsage columnID="E0C1CDA9-1EDB-D24E-50C5-0C59FD7D678A"/>
+<colUsage columnID="2812B58D-9358-0615-7BB5-4534184F8957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC903454-253E-462D-6B62-A5C053413FBA" name="Asignacion_Estudiante_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>C156B92B-CE36-4ED5-9B17-96831E884DC6</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0C1CDA9-1EDB-D24E-50C5-0C59FD7D678A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A816158-8DC4-38D1-D6A3-2631606C0338" name="Asignacion_Seccion_FK">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-27 04:39:10 UTC</createdTime>
+<generatorID>EE8E1F8E-3132-8D74-246B-E6D21B154914</generatorID>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0B18F96-37CE-7BEA-9E30-58F8C22B2C99"/>
+<colUsage columnID="8BA93B85-600A-22AA-E740-D73DE7C40207"/>
+<colUsage columnID="FFEFDDEC-4535-FABB-D3E5-0D142CFDA025"/>
+<colUsage columnID="2812B58D-9358-0615-7BB5-4534184F8957"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

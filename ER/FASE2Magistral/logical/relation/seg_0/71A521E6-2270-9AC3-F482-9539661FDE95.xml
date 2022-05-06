@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carnet_Inscrito" directorySegmentName="seg_0" id="71A521E6-2270-9AC3-F482-9539661FDE95">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-26 00:48:42 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>5A7AD9EF-5AB9-174E-803E-886EA6E8E63D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>174DA2C2-6F8B-E4CC-8957-8C1C5A38927C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>49C8FBFA-2303-5875-4CFF-4715FE4458F1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

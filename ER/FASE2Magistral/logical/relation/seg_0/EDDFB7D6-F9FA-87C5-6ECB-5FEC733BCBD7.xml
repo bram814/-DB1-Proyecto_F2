@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Carrera_Plan" directorySegmentName="seg_0" id="EDDFB7D6-F9FA-87C5-6ECB-5FEC733BCBD7">
+<createdBy>isaacxicol</createdBy>
+<createdTime>2022-04-26 20:28:54 UTC</createdTime>
+<ownerDesignName>FASE2Magistral</ownerDesignName>
+<engineerTo>
+<item key="23C13EDD-01BB-44A3-4E97-B3AE2D4DDAB9" value="true"/>
+</engineerTo>
+<sourcePk>2A65751D-341C-B1B9-EBAF-CE2601CD9705</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DFCCB4CE-BB49-9C0A-7C5A-7B3251D7D5C0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E3DDAED9-A704-50B2-8460-8CAE831679D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
