@@ -13,7 +13,11 @@ group by e.nombre
 HAVING SUM(p.numcreditos) = 141;
 
 
-
+/**  CONSULTA 2
+ * Dar el nombre del estudiante nombre de la carrera, promedio y número de créditos
+ * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
+ * no.
+*/
 SELECT e.nombre as nombre, ca.nombre as carrera, sum(pe.numcreditos)
     FROM Asignacion a
         INNER JOIN estudiante e ON e.carnet = a.carnet
@@ -25,3 +29,17 @@ SELECT e.nombre as nombre, ca.nombre as carrera, sum(pe.numcreditos)
 group by e.nombre, ca.nombre
 HAVING sum(pe.numcreditos) = 141
 order by ca.nombre;
+
+/**  CONSULTA 3
+ * Dar el nombre del estudiante nombre de la carrera, promedio y número de créditos
+ * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
+ * no.
+*/
+SELECT cat.nombre, cur.nombre
+    FROM seccion se
+        INNER JOIN catedratico cat on cat.catedratico = se.catedratico
+        INNER JOIN curso cur on  cur.codigo = se.codigo
+        INNER JOIN pensum pe on pe.codigo = cur.codigo
+       
+    group by cat.nombre, cur.nombre
+;
