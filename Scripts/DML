@@ -14,5 +14,15 @@ HAVING SUM(p.numcreditos) = 141;
 
 
 
-
+SELECT e.nombre as nombre, ca.nombre as carrera, TRUNC(AVG(a.nota),2) as promedio, SUM(pe.numcreditos) as  creditos 
+    FROM asignacion a
+        INNER JOIN estudiante e  ON e.carnet = a.carnet
+        INNER JOIN seccion s    on s.seccion = a.seccion
+        INNER JOIN curso cu     ON cu.codigo = s.codigo
+        INNER JOIN pensum pe    ON pe.codigo = pe.codigo
+        INNER JOIN plan pl      on pl.plan=pe.plan
+        INNER JOIN carrera ca   on ca.carrera = pl.carrera
+        INNER JOIN inscrito ins on ins.carnet = e.carnet
+    
+group by e.nombre, ca.nombre;
 
