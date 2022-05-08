@@ -1,1 +1,18 @@
 
+/**  CONSULTA 1
+ * Dar el nombre del estudiante, promedio, y número de créditos ganados, para los
+ * estudiantes que han cerrado Ingeniería en Ciencias y Sistemas.
+*/
+SELECT e.nombre as nombre, AVG(a.nota) as promedio, SUM(p.numcreditos) as  creditos FROM asignacion a
+    INNER JOIN estudiante e ON e.carnet = a.carnet
+    INNER JOIN pensum p ON p.codigo = a.codigo
+    INNER JOIN carrera c ON c.carrera = p.carrera
+    INNER JOIN curso cu on a.codigo = cu.codigo
+WHERE c.carrera = '6' 
+group by e.nombre 
+HAVING SUM(p.numcreditos) = 141;
+
+
+
+
+
