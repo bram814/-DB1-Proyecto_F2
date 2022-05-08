@@ -20,7 +20,7 @@ SELECT e.nombre as nombre, ca.nombre as carrera, sum(pe.numcreditos)
         INNER JOIN seccion se on se.codigo = a.codigo and se.ano = a.ano and se.ciclo = a.ciclo and se.seccion = a.seccion
         INNER JOIN inscrito ins on ins.carnet = a.carnet
         INNER JOIN carrera ca on ca.carrera = ins.carrera
-        INNER JOIN plan pl on pl.carrera = pl.carrera
+        INNER JOIN plan pl on pl.carrera = ca.carrera
         INNER JOIN Pensum pe on pe.codigo = a.codigo and pe.plan = pl.plan and pe.carrera = ca.carrera
 group by e.nombre, ca.nombre
 HAVING sum(pe.numcreditos) = 141
