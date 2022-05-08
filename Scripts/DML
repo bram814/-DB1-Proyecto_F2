@@ -35,11 +35,21 @@ order by ca.nombre;
  * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
  * no.
 */
-SELECT cat.nombre, cur.nombre
+SELECT cat.nombre, cur.nombre, e.nombre
     FROM seccion se
         INNER JOIN catedratico cat on cat.catedratico = se.catedratico
         INNER JOIN curso cur on  cur.codigo = se.codigo
-        INNER JOIN pensum pe on pe.codigo = cur.codigo
-       
-    group by cat.nombre, cur.nombre
-;
+        INNER JOIN pensum pe on pe.codigo = cur.codigo  
+        INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
+        INNER JOIN estudiante e on e.carnet = a.carnet
+        
+    group by cat.nombre, cur.nombre, e.nombre
+    order by cat.nombre, cur.nombre, e.nombre;
+
+    /** CONSULTA 4
+     * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
+     * estudiantes que llevaron con él todos los cursos.
+     * */
+
+
+     
