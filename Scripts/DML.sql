@@ -158,3 +158,43 @@ insert into Catedratico values (54, 'Lucas Danilo', 52325, number_to_words.N_TO_
 insert into Catedratico values (55, 'Ana Rivera', 125341, number_to_words.N_TO_LETTERS(125341));
 insert into Catedratico values (56, 'Maria Ines', 147422, number_to_words.N_TO_LETTERS(147422));
 insert into Catedratico values (57, 'Pedro Estrada', 65263, number_to_words.N_TO_LETTERS(65263));
+
+
+/** INCISO 10
+ * Para un estudiante, dar el código y nombre de los cursos que pueden asignarse el próximo
+ * semestre, basado en que ya aprobó los respectivos prerrequisitos. 
+*/
+
+ select distinct s4.codigo, s4.nombre from (
+    select * from (
+        select * from (
+            select distinct cu.codigo, cu.nombre, pre.curso_prerreq from carrera ca
+                inner join inscrito i on ca.carrera = i.carrera
+                inner join estudiante e on i.carnet = e.carnet
+                inner join plan pl on pl.carrera = ca.carrera
+                inner join pensum pe on pe.plan = pl.plan
+                inner join curso cu on cu.codigo = pe.codigo
+                inner join prerrequisito pre on pre.pensum_carrera = pe.carrera and pre.pensum_plan = pe.plan and pre.pensum_codigo = cu.codigo
+            where e.carnet = '201507334'
+        ) s1 where s1.codigo not in (
+            select a.codigo from 
+                asignacion a 
+            where a.carnet = '201507334'
+        )
+    ) s2
+    where s2.curso_prerreq in (
+        select * from (
+            select distinct cu.codigo from carrera ca
+                inner join inscrito i on ca.carrera = i.carrera
+                inner join estudiante e on i.carnet = e.carnet
+                inner join plan pl on pl.carrera = ca.carrera
+                inner join pensum pe on pe.plan = pl.plan
+                inner join curso cu on cu.codigo = pe.codigo
+                inner join prerrequisito pre on pre.pensum_carrera = pe.carrera and pre.pensum_plan = pe.plan and pre.pensum_codigo = cu.codigo
+            where e.carnet = '201507334'
+        ) s3 where s3.codigo in (
+            select a.codigo from asignacion a
+            where a.carnet = '201507334'
+        )
+    )
+) s4;
