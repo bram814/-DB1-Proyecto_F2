@@ -147,3 +147,14 @@ where
 
     )
 ;
+
+/** INCISO 7
+ * Insertar una nueva columna en la tabla catedráticos en la que se grabe el salario que ganan,
+ * pero en letras. Pueden usar tablas auxiliares (no mayor a Q 99,000 sin centavos)
+*/
+
+insert into Catedratico values (53, 'Mario Duarte', 22540, number_to_words.N_TO_LETTERS(22540));
+insert into Catedratico values (54, 'Lucas Danilo', 52325, number_to_words.N_TO_LETTERS(52325));
+insert into Catedratico values (55, 'Ana Rivera', 125341, number_to_words.N_TO_LETTERS(125341));
+insert into Catedratico values (56, 'Maria Ines', 147422, number_to_words.N_TO_LETTERS(147422));
+insert into Catedratico values (57, 'Pedro Estrada', 65263, number_to_words.N_TO_LETTERS(65263));

@@ -28,8 +28,6 @@ REFERENCES Carrera ( Carrera );
 ALTER TABLE Inscrito ADD CONSTRAINT inscrito_estudiante_FK FOREIGN KEY ( Carnet )
 REFERENCES Estudiante ( Carnet );
 
-
-
 CREATE TABLE Plan (
     Plan              VARCHAR2(10) NOT NULL,
     Carrera           INTEGER NOT NULL,
@@ -102,6 +100,8 @@ CREATE TABLE Catedratico (
 );
 
 ALTER TABLE Catedratico ADD CONSTRAINT catedratico_PK PRIMARY KEY ( Catedratico );
+
+ALTER TABLE Catedratico ADD sueldo_letras VARCHAR2(250);
 
 CREATE TABLE Seccion (
     Seccion     VARCHAR2(2) NOT NULL,
@@ -214,4 +214,4 @@ DROP TABLE CURSO;
 DROP TABLE ESTUDIANTE;
 DROP TABLE DIA;
 DROP TABLE SALON; 
-DROP TABLE PERIODO; 
+DROP TABLE PERIODO;
