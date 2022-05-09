@@ -60,6 +60,33 @@ order by cat.nombre, cur.nombre, e.nombre;
 /** CONSULTA 4
  * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
  * estudiantes que llevaron con él todos los cursos.
- * */
+*/
 
-
+select DISTINCT s3.compañero, es.nombre from (
+    select  compañero from (
+        select * from 
+        (
+            (
+            select a.carnet, a.seccion, a.ano, a.ciclo, a.codigo, cur.nombre from asignacion a
+                INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
+                INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
+                
+            where a.carnet = '201800937'
+            order by a.seccion, a.ano, a.ciclo
+            
+            ) s1
+           JOIN 
+           (
+              select a.carnet as compañero, a.seccion, a.ano, a.ciclo, a.codigo from asignacion a
+                INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
+                INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
+                
+            where a.carnet <> '201800937'
+            order by a.seccion, a.ano, a.ciclo
+            
+           ) s2
+           on (s1.seccion = s2.seccion and s1.ano = s2.ano and s1.ciclo = s2.ciclo)
+        )
+    )
+) s3 
+INNER JOIN estudiante es on s3.compañero = es.carnet;
