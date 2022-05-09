@@ -148,6 +148,26 @@ where
     )
 ;
 
+/** INCISO 6
+ * Dar el nombre de los estudiantes que tienen un promedio superior al promedio de los
+ * estudiantes de su carrera y su edad es menor que el promedio de edades de los estudiantes
+ * de su carrera.
+*/
+select s2.nombre, trunc(avg(s1.nota),2) as promedio,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25) AS edad  from asignacion s1
+    inner join estudiante s2 on s2.carnet = s1.carnet
+    WHERE (
+            (
+                TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)
+            )
+            < 
+            (
+                SELECT avg(TRUNC(TO_NUMBER(SYSDATE - e.FECHANACIMIENTO) / 365.25)) FROM ESTUDIANTE e)
+            )    
+
+group by s2.nombre,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)  
+HAVING AVG(s1.Nota) > (SELECT AVG(a.NOTA) FROM ASIGNACION a)
+order by promedio desc ;
+
 /** INCISO 7
  * Insertar una nueva columna en la tabla catedráticos en la que se grabe el salario que ganan,
  * pero en letras. Pueden usar tablas auxiliares (no mayor a Q 99,000 sin centavos)
