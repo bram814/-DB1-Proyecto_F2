@@ -100,12 +100,12 @@ select DISTINCT s3.compañero, es.nombre from (
         select persona,compañero, s2seccion, s2ano, s2ciclo, s2codigo  from 
         (
             (
-            select a.carnet as persona, a.seccion, a.ano, a.ciclo, a.codigo, cur.nombre from asignacion a
-                INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
-                INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
-                
-            where a.carnet = '201800937'
-            order by a.seccion, a.ano, a.ciclo
+                select a.carnet as persona, a.seccion, a.ano, a.ciclo, a.codigo, cur.nombre from asignacion a
+                    INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
+                    INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
+                    
+                where a.carnet = '201800937'
+                order by a.seccion, a.ano, a.ciclo
             
             ) s1
            JOIN 
@@ -126,12 +126,24 @@ INNER JOIN estudiante es on s3.compañero = es.carnet
 INNER JOIN inscrito ins on es.carnet = ins.carnet
 INNER JOIN inscrito ins2 on s3.persona =  ins2.carnet
 INNER JOIN carrera car on car.carrera = ins.carrera and ins2.carrera = ins.carrera
+
+where 
+    (
+        select * from
+            (
+                select count(*) as rcont1 from asignacion a
+                    INNER JOIN estudiante es on es.carnet = a.carnet
+                    INNER JOIN inscrito ins on ins.carnet = es.carnet
+                where a.carnet = s3.persona
+            ) s1cont
+            JOIN
+            (
+                select count(*) as rcont2 from asignacion a
+                    INNER JOIN estudiante es on es.carnet = a.carnet
+                    INNER JOIN inscrito ins on ins.carnet = es.carnet
+                where a.carnet = s3.compañero
+            ) s2cont
+            on (s1cont.rcont1 = s2cont.rcont2)
+
+    )
 ;
-
-
-(
-    select count(*) from asignacion a
-        INNER JOIN estudiante es on es.carnet = a.carnet
-        INNER JOIN inscrito ins on ins.carnet = es.carnet
-    where a.carnet = '201800937'
-) as  s1cont;
