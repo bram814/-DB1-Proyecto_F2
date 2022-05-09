@@ -18,7 +18,7 @@ HAVING SUM(p.numcreditos) = 141;
  * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
  * no.
 */
-SELECT e.nombre as nombre, ca.nombre as carrera, sum(pe.numcreditos)
+SELECT e.nombre as nombre, ca.nombre as carrera, TRUNC(AVG(a.nota),2) as promedio, sum(pe.numcreditos) as creditos
     FROM Asignacion a
         INNER JOIN estudiante e ON e.carnet = a.carnet
         INNER JOIN seccion se on se.codigo = a.codigo and se.ano = a.ano and se.ciclo = a.ciclo and se.seccion = a.seccion
@@ -29,13 +29,12 @@ SELECT e.nombre as nombre, ca.nombre as carrera, sum(pe.numcreditos)
 group by e.nombre, ca.nombre
 HAVING sum(pe.numcreditos) = 141
 order by ca.nombre;
-
 /**  CONSULTA 3
  * Dar el nombre del estudiante nombre de la carrera, promedio y número de créditos
  * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
  * no.
 */
-SELECT cat.nombre, cur.nombre, e.nombre
+SELECT cat.nombre as catedratico, cur.nombre as curso, e.nombre as estudiante
     FROM seccion se
         INNER JOIN catedratico cat on cat.catedratico = se.catedratico
         INNER JOIN curso cur on  cur.codigo = se.codigo
@@ -43,13 +42,24 @@ SELECT cat.nombre, cur.nombre, e.nombre
         INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
         INNER JOIN estudiante e on e.carnet = a.carnet
         
-    group by cat.nombre, cur.nombre, e.nombre
-    order by cat.nombre, cur.nombre, e.nombre;
+group by cat.nombre, cur.nombre, e.nombre
+order by cat.nombre, cur.nombre, e.nombre;
 
-    /** CONSULTA 4
-     * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
-     * estudiantes que llevaron con él todos los cursos.
-     * */
+-- con catedratico en especifico.
+SELECT cat.nombre as catedratico, cur.nombre as curso, e.nombre as estudiante
+    FROM seccion se
+        INNER JOIN catedratico cat on cat.catedratico = se.catedratico
+        INNER JOIN curso cur on  cur.codigo = se.codigo
+        INNER JOIN pensum pe on pe.codigo = cur.codigo  
+        INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
+        INNER JOIN estudiante e on e.carnet = a.carnet
+where cat.nombre = 'Amye Manoch'        
+group by cat.nombre, cur.nombre, e.nombre
+order by cat.nombre, cur.nombre, e.nombre;
+
+/** CONSULTA 4
+ * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
+ * estudiantes que llevaron con él todos los cursos.
+ * */
 
 
-     
