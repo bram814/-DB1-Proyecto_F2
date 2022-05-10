@@ -3,7 +3,7 @@
  * Dar el nombre del estudiante, promedio, y número de créditos ganados, para los
  * estudiantes que han cerrado Ingeniería en Ciencias y Sistemas.
 */
-SELECT e.nombre as nombre, AVG(a.nota) as promedio, SUM(p.numcreditos) as  creditos FROM asignacion a
+SELECT e.nombre as nombre, TRUNC(AVG(a.nota),2) as promedio, SUM(p.numcreditos) as  creditos FROM asignacion a
     INNER JOIN estudiante e ON e.carnet = a.carnet
     INNER JOIN pensum p ON p.codigo = a.codigo
     INNER JOIN carrera c ON c.carrera = p.carrera
@@ -34,28 +34,17 @@ order by ca.nombre;
  * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
  * no.
 */
-SELECT cat.nombre as catedratico, cur.nombre as curso, e.nombre as estudiante
+select distinct s1.estudiante from (SELECT e.nombre as estudiante
     FROM seccion se
         INNER JOIN catedratico cat on cat.catedratico = se.catedratico
         INNER JOIN curso cur on  cur.codigo = se.codigo
         INNER JOIN pensum pe on pe.codigo = cur.codigo  
+        INNER JOIN carrera c ON c.carrera = pe.carrera
         INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
         INNER JOIN estudiante e on e.carnet = a.carnet
-        
+where c.carrera = '6'
 group by cat.nombre, cur.nombre, e.nombre
-order by cat.nombre, cur.nombre, e.nombre;
-
--- con catedratico en especifico.
-SELECT cat.nombre as catedratico, cur.nombre as curso, e.nombre as estudiante
-    FROM seccion se
-        INNER JOIN catedratico cat on cat.catedratico = se.catedratico
-        INNER JOIN curso cur on  cur.codigo = se.codigo
-        INNER JOIN pensum pe on pe.codigo = cur.codigo  
-        INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
-        INNER JOIN estudiante e on e.carnet = a.carnet
-where cat.nombre = 'Amye Manoch'        
-group by cat.nombre, cur.nombre, e.nombre
-order by cat.nombre, cur.nombre, e.nombre;
+order by cat.nombre, cur.nombre, e.nombre) s1;
 
 /** CONSULTA 4
  * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
@@ -90,63 +79,6 @@ select DISTINCT s3.compañero, es.nombre from (
     )
 ) s3 
 INNER JOIN estudiante es on s3.compañero = es.carnet;
-
-/** CONSULTA 5
- * Dar el nombre de las parejas de estudiantes que han llevado todos los cursos en común (es
- * decir, han sido compañeros en todos los cursos).
-*/
-select DISTINCT s3.compañero, es.nombre from (
-    select  persona,compañero, s2seccion, s2ano,s2ciclo, s2codigo from (
-        select persona,compañero, s2seccion, s2ano, s2ciclo, s2codigo  from 
-        (
-            (
-                select a.carnet as persona, a.seccion, a.ano, a.ciclo, a.codigo, cur.nombre from asignacion a
-                    INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
-                    INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
-                    
-                where a.carnet = '201800937'
-                order by a.seccion, a.ano, a.ciclo
-            
-            ) s1
-           JOIN 
-           (
-              select a.carnet as compañero, a.seccion as s2seccion, a.ano as s2ano, a.ciclo as s2ciclo, a.codigo as s2codigo  from asignacion a
-                INNER JOIN seccion sec on sec.seccion = a.seccion and a.ano = sec.ano and a.codigo = sec.codigo and a.ciclo = sec.ciclo
-                INNER JOIN curso cur on cur.codigo = sec.codigo and cur.codigo = a.codigo
-                
-            where a.carnet <> '201800937'
-            order by a.seccion, a.ano, a.ciclo
-            
-           ) s2
-           on (s1.seccion = s2seccion and s1.ano = s2ano and s1.ciclo = s2ciclo and s1.codigo = s2codigo )
-        ) 
-    ) 
-) s3
-INNER JOIN estudiante es on s3.compañero = es.carnet
-INNER JOIN inscrito ins on es.carnet = ins.carnet
-INNER JOIN inscrito ins2 on s3.persona =  ins2.carnet
-INNER JOIN carrera car on car.carrera = ins.carrera and ins2.carrera = ins.carrera
-
-where 
-    (
-        select * from
-            (
-                select count(*) as rcont1 from asignacion a
-                    INNER JOIN estudiante es on es.carnet = a.carnet
-                    INNER JOIN inscrito ins on ins.carnet = es.carnet
-                where a.carnet = s3.persona
-            ) s1cont
-            JOIN
-            (
-                select count(*) as rcont2 from asignacion a
-                    INNER JOIN estudiante es on es.carnet = a.carnet
-                    INNER JOIN inscrito ins on ins.carnet = es.carnet
-                where a.carnet = s3.compañero
-            ) s2cont
-            on (s1cont.rcont1 = s2cont.rcont2)
-
-    )
-;
 
 /** INCISO 6
  * Dar el nombre de los estudiantes que tienen un promedio superior al promedio de los
