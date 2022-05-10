@@ -30,24 +30,26 @@ group by e.nombre, ca.nombre
 HAVING sum(pe.numcreditos) = 141
 order by ca.nombre;
 /**  CONSULTA 3
- * Dar el nombre del estudiante nombre de la carrera, promedio y número de créditos
- * ganados, para los estudiantes que han cerrado en alguna carrera, estén inscritos en ella o
- * no.
+ * Dar el nombre de los estudiantes que han ganado algún curso con alguno de los catedráticos
+ * que han impartido alguno de los cursos de la carrera de sistemas en alguno de los planes
+ * que se impartieron en el semestre pasado.
 */
-select distinct s1.estudiante from (SELECT e.nombre as estudiante
-    FROM seccion se
-        INNER JOIN catedratico cat on cat.catedratico = se.catedratico
-        INNER JOIN curso cur on  cur.codigo = se.codigo
-        INNER JOIN pensum pe on pe.codigo = cur.codigo  
-        INNER JOIN carrera c ON c.carrera = pe.carrera
-        INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
-        INNER JOIN estudiante e on e.carnet = a.carnet
-where c.carrera = '6'
-group by cat.nombre, cur.nombre, e.nombre
-order by cat.nombre, cur.nombre, e.nombre) s1;
+select distinct s1.estudiante from (
+    SELECT e.nombre as estudiante
+        FROM seccion se
+            INNER JOIN catedratico cat on cat.catedratico = se.catedratico
+            INNER JOIN curso cur on  cur.codigo = se.codigo
+            INNER JOIN pensum pe on pe.codigo = cur.codigo  
+            INNER JOIN carrera c ON c.carrera = pe.carrera
+            INNER JOIN asignacion a on a.codigo = cur.codigo AND a.seccion = se.seccion AND a.ciclo = se.ciclo
+            INNER JOIN estudiante e on e.carnet = a.carnet
+    where c.carrera = '6'
+    group by cat.nombre, cur.nombre, e.nombre
+    order by cat.nombre, cur.nombre, e.nombre
+) s1;
 
 /** CONSULTA 4
- * 4. Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
+ * Para un estudiante determinado que cerrado en alguna carrera, dar el nombre de los
  * estudiantes que llevaron con él todos los cursos.
 */
 
@@ -85,9 +87,29 @@ INNER JOIN estudiante es on s3.compañero = es.carnet;
  * estudiantes de su carrera y su edad es menor que el promedio de edades de los estudiantes
  * de su carrera.
 */
+
+--- CON WHERE SISTEMAS
+select s2.nombre, avg(s1.nota) as promedio,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25) AS edad  from asignacion s1
+    inner join estudiante s2 on s2.carnet = s1.carnet
+    INNER JOIN INSCRITO s3 ON s3.CARNET  = s2.CARNET 
+    WHERE (
+        (
+            TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)
+        ) 
+        < 
+        (
+            SELECT avg(TRUNC(TO_NUMBER(SYSDATE - e.FECHANACIMIENTO) / 365.25)) FROM ESTUDIANTE e)
+        )
+        AND s3.CARRERA ='6'
+
+group by s2.nombre,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)  
+HAVING (avg(s1.NOTA) >(SELECT AVG(a.NOTA) FROM ASIGNACION a))
+order by promedio desc ;
+
+-- TOAS LAS CARRERAS
 select s2.nombre, trunc(avg(s1.nota),2) as promedio,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25) AS edad  from asignacion s1
     inner join estudiante s2 on s2.carnet = s1.carnet
-    WHERE (
+    ineer join
             (
                 TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)
             )
@@ -96,9 +118,10 @@ select s2.nombre, trunc(avg(s1.nota),2) as promedio,TRUNC(TO_NUMBER(SYSDATE - s2
                 SELECT avg(TRUNC(TO_NUMBER(SYSDATE - e.FECHANACIMIENTO) / 365.25)) FROM ESTUDIANTE e)
             )    
 
-group by s2.nombre,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25)  
+group by s2.nombre,TRUNC(TO_NUMBER(SYSDATE - s2.FECHANACIMIENTO) / 365.25) 
 HAVING AVG(s1.Nota) > (SELECT AVG(a.NOTA) FROM ASIGNACION a)
 order by promedio desc ;
+
 
 /** INCISO 7
  * Insertar una nueva columna en la tabla catedráticos en la que se grabe el salario que ganan,
